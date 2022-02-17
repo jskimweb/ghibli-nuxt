@@ -22,7 +22,7 @@
 
 	export default {
 		async asyncData() {
-			const response = await axios.get('https://ghibliapi.herokuapp.com/films');
+			const response = await axios.get('https://ghibliapi.herokuapp.com/people');
 			const List = response.data;
 			return { List }
 		}
